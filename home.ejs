@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Add items</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 class="c1">Student Information inventory Management</h1>
+        <h3><a href="/create" class="c2">Add new student</a></h3>
+        <h3><a href="/updatestudent" class="c2">update student info</a></h3>
+        <h3><a href="/deletestudent" class="c2">Delete student</a></h3>
+        <center><h2>WELCOME</h2></center>
+        <p>Here the management can check the student information regarding about their courses and course teachers.
+          we can add new student details to it or delete the existing student details
+        </p>
+        <center>
+          <table style="border:0cm,margin=0cm;">
+            <tr>
+              <th>Student_id</th>
+              <th>Student_name</th>
+              <th>course_name</th>
+              <th>course_teacher</th>
+            </tr>
+            <% for(var i=0;i<data.length;i++) { %>
+            <tr class="b">
+              <td><%= data[i].stu_id %></td>
+              <td><%= data[i].stu_name %></td>
+              <td><%= data[i].course_name %></td>
+              <td><%= data[i].course_teacher %></td>
+            </tr>
+            <% } %>
+          </table>
+        </center>
+    </body>
+</html>

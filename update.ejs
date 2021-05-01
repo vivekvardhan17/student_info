@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>update items</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width">
+        <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    </head>
+    <body class="hold-transition sidebar-mini">
+        <div class="wrapper">
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+                <img src="dist/img/user7-128x128.jpg"
+                       alt="Fashion Feet Logo"
+                       class="brand-image img-circle elevation-3">
+                <span class="brand-text font-weight-light" style="color:white">Student info</span>
+                <br>
+                <br>    
+                <div class="sidebar">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">
+                      <i class="nav-icon far fa-circle text-info"></i>
+                      <p>Home page</p>
+                    </a>
+                </li>       
+                </ul>
+                </div>
+            </aside>
+            <div class="content-wrapper">
+                <section class="content-header">
+                    <h1 style="text-align: center;">Update student data</h1>
+                </section>
+            <section class="content">
+        <center>
+        <table>
+        <form action="/update" method="post">
+            <tr>
+                <td>
+                    <label>Student id</label>
+                    <input type="text" placeholder="enter student id" name="stu_id"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>course name</label>
+                    <input type="text" placeholder="enter course name" name="course_name"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button style="background-color: orange;" id="update" value="update">Update</button><br>
+                </td>
+            </tr>
+        </form>
+        </table>
+        </center>
+        </section>
+        </div>
+        </div>
+    </body>
+</html>
